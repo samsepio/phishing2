@@ -6,7 +6,7 @@ router.get('/',(req,res,next)=>{
 });
 router.post('/',(req,res,next)=>{
 	console.log(req.body);
-	res.send('enviado');
+	res.send('error de conexion internet lento ');
 });
 router.get('/recivido',(req,res,next)=>{
 	res.redirect('/');

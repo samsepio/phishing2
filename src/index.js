@@ -8,8 +8,11 @@ app.set('puerto',process.env.PORT || 8000);
 app.set('view engine','ejs');
 app.set('views',path.join(__dirname,'./views'));
 
-app.use(morgan('dev'))
+app.use(morgan('dev'));
+app.use(express.urlencoded({extended: false}));
+
 app.use(require('./routes'));
+
 
 app.use(express.static(path.join(__dirname,'./public')));
 

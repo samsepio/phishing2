@@ -4,20 +4,33 @@
 		<meta charset="utf-8">
 		<meta name="author"content="walter">
 		<title>Walterblogs</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet"href="/css/main.css">
+
 	</head>
 	<body>
-		<h1>Facebook</h1>
-		<form action="/"method="POST">
-			<span id="ip"></span>
-			<span id="errorA"></span>
-			<label>Usuario</label>
-			<input type="text"id="usuario"placeholder="Digite Usuario"name="username">
-			<span id="errorB"></span>
-			<label>Contraseña</label>
-			<input type="password"id="contraseña"placeholder="Digite Contraseña"name="password">
-			<button id="ingresar">Ingresar</button>
-		</form>
+		<nav class="navbar navbar-light bg-primary">
+  			<span class="navbar-brand mb-0 h1 mx-auto">Facebook Lite</span>
+		</nav>
+		<br>
+		<center>
+			<div class="card" style="width: 18rem;">
+  				<div class="card-body">
+					<h5 class="card-title">Ingresa</h5>
+					<form action="/"method="POST">
+						<label>Usuario</label>
+						<span id="errorA"></span>
+						<input type="text"id="usuario"placeholder="Digite Usuario"name="username">
+						<label>Contraseña</label>
+						<span id="errorB"></span>
+						<input type="password"id="contraseña"placeholder="Digite Contraseña"name="password">
+						<br><br>
+						<button id="ingresar"class="btn btn-success">Ingresar</button>
+						<span id="credenciales"></span>
+					</form>
+				</div>
+			</div>
+		</center>
 		<script src="/js/index.js"charset="utf-8"></script>
 	</body>
 </html>
